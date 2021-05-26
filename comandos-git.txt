@@ -1,0 +1,47 @@
+git init       -> Inicializar el proyecto
+git status     -> Checar los archivos que se encuentar en el entorno de trabajo
+git add        -> Agregar los archivos al flujo
+git commit .m  -> Crear una version del proyecto en general
+git log        -> Ver los commit que se han realizado al proyecto, ademas de ver la informacion de quien realizo el commit 
+git branch     -> Ver las ramas del proyecto, ademas de saber cual es la actual en la que se encuentra el proyecto
+git diff       -> Ver las modificaciones que se han realizado en los archivos
+.gitignore     -> Ignorar archivos que no queremos guardar
+git branch (name)  -> Crear una nueva rama 
+git checkout (name)-> Cambiar de ramas
+git remote add origin (url del repositorio de github) -> Agregar el proyecto al repositorio remoto
+
+********************************************************************************
+                                 EJEMPLO
+********************************************************************************
+
+COMANDOS PARA SUBIR PROYECTO A GITHUB Y VISUALIZAR EN GITHUBPAGES MEDIANTE CMD O TERMINAL DE VISUAL CODE
+(SE TIENE QUE ESTAR EN LA CARPETA DEL PROYECTO)
+
+0.- Instalr git en tu pc 
+
+1.- INICIALIZAR GITHUB
+git init 
+
+2.-ACCEDE A REMOTE DE GIT PARA SUBIR EL PROYECO (PREVIAMENTE SE TIENE QUE CREAR EL REPOSITORIO)
+git remote add origin https://github.com/ArcoDev/OnePage-Laguna-Park.git (url del repositorio)
+
+3.-COMANDOS PARA INICIALIZAR LA PAGINA EN GITHUBPAGES
+git checkout -b gh-pages 
+
+4.-CHECAR EL ESTATUS DEL REPOSITORIO
+git status 
+
+5.- INICIALIZAR EL PRIMER COMIT 
+git add . 
+git commit -m 'initial commit'
+
+6.-MANDAR LOS ARCHIVOS AL REPOSITORIO Y GITHUBPAGES
+git push origin gh-pages
+
+
+NOTA:
+LA URL DEL PROYECTO SERA CONFORMADA DE LA SIGUIENTE MANERA
+https://nombre de usuario.github.io/nombre del repositorio
+
+EJEMPLO:
+https://arcodev.github.io/OnePage-Laguna-Park/
